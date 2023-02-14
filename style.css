@@ -175,17 +175,17 @@
     /* border:1px solid red; */
 }
 #body-first{
-    height:13%;
+    height:14%;
     width:100%;
     border:1px solid pink;
     background-image: url("https://m.media-amazon.com/images/I/619rl+QqjwL._SX3000_.jpg");
     background-size:100% 100%;
 }
 #body-first >div{
-    margin-top: 19.2%;
+    margin-top: 22%;
     margin-left: 2.5%;
     margin-right: 2.5%;
-    height: 60%;
+    height: 57%;
     width:95%;
     display:grid;
     grid-template-rows: 1fr 1.5fr;
@@ -226,6 +226,8 @@
 .quadrant{
     background-color: white;
     padding: 20px;
+    height: 100%;
+    width: 100%;
 }
 .quadrant >div:nth-child(1){
     height:12%;
@@ -340,6 +342,8 @@
 .one-d {
     background-color: white;
     font-size: 1vw;
+    height: 100%;
+    width:100%;
 }
 
 .one-d  >div:nth-child(1){
@@ -363,6 +367,7 @@
     height: 10%;
     width:100%;
     margin-top: 5%;
+    padding:0 10px;
     color:rgb(29, 62, 152);
 
 }
@@ -483,4 +488,25 @@
 .single-cards >div:nth-child(2) >div img{
     height:100%;
     width:100%;
+}
+/* /// Body Fourth //// */
+.body-fourth
+{
+    height:8%;
+    width:100%;
+    /* border:1px solid blue; */
+}
+.body-fourth >div{
+    width:95%;
+    height:90%;
+    margin:1.5% 2.5%;
+     /* border:1px solid blue; */
+     display: flex;
+     justify-content: space-between;
+}
+.body-fourth >div >div{
+    height:100%;
+    width:23%;
+    /* border:1px solid blue; */
+    padding:0;
 }

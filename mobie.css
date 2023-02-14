@@ -58,7 +58,7 @@
         margin-top: 95px;
     }
     .quadrant{
-        padding: 10px 10px;
+        padding: 2px 10px;
         height:100%;
         /* border:1px solid red; */
     }
@@ -70,6 +70,9 @@
     .quad-view >p{
         font-size: 0.8vw;
         /* border:1px solid red; */
+    }
+    .one-d  >div:nth-child(1){
+        padding: 2px;
     }
     #body-first >div{
         grid-template-columns: 1fr 1fr 1fr;
@@ -101,4 +104,7 @@
     .single-cards{
         height:100px;
     } 
+    .body-fourth{
+        height:120px;
+    }
 }
