@@ -90,10 +90,13 @@
     #body-third >div:nth-child(2)>div:nth-child(5){
         display: none;
     }
-    #body-third >div:nth-child(1) h2{
+    #body-third >div:nth-child(1) h2,{
         font-size:2.6vw;
     }
     #body-third >div:nth-child(1) a{
         font-size:1.5vw;
+    }
+    .single-cards{
+        height:100px;
     }
 }
