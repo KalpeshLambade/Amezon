@@ -84,13 +84,15 @@
     #body-third{
         height: 150px;
     }
-    #body-third >div:nth-child(2) >div{
+    #body-third >div:nth-child(2) >div, .single-cards >div:nth-child(2) >div{
         width:22%;
     }
-    #body-third >div:nth-child(2)>div:nth-child(5){
+    #body-third >div:nth-child(2)>div:nth-child(5),
+    .single-cards >div:nth-child(2) >div:last-child
+    {
         display: none;
     }
-    #body-third >div:nth-child(1) h2,{
+    #body-third >div:nth-child(1) h2{
         font-size:2.6vw;
     }
     #body-third >div:nth-child(1) a{
@@ -98,5 +100,5 @@
     }
     .single-cards{
         height:100px;
-    }
+    } 
 }
