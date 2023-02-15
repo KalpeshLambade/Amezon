@@ -140,7 +140,7 @@
     align-items: center;
 }
 /* Navbar bottom */
-#navbar-bot{
+#navbar-bot {
     height:40%;
     width: 100%;
     background-color: #232f3e;
@@ -149,14 +149,18 @@
     align-items:center;
     font-size: 0.9vw;
 }
-#navbar-bot >div{
+#navbar-bot >div:first-child {
+    display:flex;
+    width:80%;
+}
+#navbar-bot >div >div{
     width:10%;
     /* border: 1px solid white; */
     text-align: center;
 }
 #navbar-bot >div:last-child{
     width:30%;
-    height: 100%;
+    height: 60%;
 }
 #navbar-bot >div:last-child img{
     height:100%;
@@ -165,6 +169,9 @@
 .align-nav{
     display:flex;
     justify-content:space-evenly;
+}
+#mob-nav-bot{
+    display: none;
 }
 /* 
 ???//// Body section //// ??? */
@@ -197,7 +204,7 @@
 #body-first >div >div:nth-child(1){
     grid-row: 1/span 2 ;
     grid-column:1/ span 1 ;
-    border:1px solid white;
+    border:1px solid red;
 }
 #body-first >div >div:nth-child(2){
     grid-row: 1/span 2 ;
@@ -265,7 +272,7 @@
 }
 .quadrant >div:nth-child(3){
     height:5%;
-    /* border:1px solid tomato; */
+    /* border:1px solid yellow; */
 }
 
 .quad-view{
@@ -344,6 +351,7 @@
     font-size: 1vw;
     height: 100%;
     width:100%;
+    /* border:1px solid blue; */
 }
 
 .one-d  >div:nth-child(1){
@@ -364,7 +372,7 @@
     /* border:1px solid blue; */
 }
 .one-d >div:nth-child(3){
-    height: 10%;
+    height: 15%;
     width:100%;
     margin-top: 5%;
     padding:0 10px;
@@ -441,8 +449,8 @@
     color:white;
     font-size: 1vw;
     width:40%;
-   padding:5px;
-   border-radius:5px;
+    padding:5px;
+    border-radius:5px;
     
 }
 .deal-card >div:nth-child(2) >div:nth-child(2){
