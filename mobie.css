@@ -117,8 +117,13 @@
 
 
 /* Mobile view */
-@media screen and (max-width:500px) {
-    .nav-head,#navbar-top >div:nth-child(4){
+@media screen and (max-width:500px) 
+{
+    #full-page{
+      
+    }
+    .nav-head,#navbar-top >div:nth-child(4)
+    {
         display:none;
     }
     #navbar{
@@ -312,7 +317,7 @@
         height:120px;
     }
     #sign-in {
-        height:130px;
+        height:100px;
        
     }
     #sign-in >div{
@@ -338,6 +343,15 @@
         display:flex;
         justify-content: center;
         gap:10px;
+        font-size:3vw;
+    }
+    .remove{
+        display:none;
+    }
+    #footer{
+        height:100px;
+    }
+    #back-top{
         font-size:3vw;
     }
 }
