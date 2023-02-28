@@ -354,4 +354,30 @@
     #back-top{
         font-size:3vw;
     }
+
+    /* registration */
+    #reg-page >div{
+        width:90%;
+    }
+    #reg-page-main-top>h2{
+         font-size:5vw;
+    }
+    #reg-page-main-bot >div:nth-child(1)>p{
+         font-size: 3vw;
+    }
+    #reg-page-main-bot >div:nth-child(2)>p{
+        font-size: 3vw;
+    }
+    footer >div{
+        width:90%;
+    }
+    footer >div >div>p,#reg-page-main-form >form >p{
+        font-size: 2.5vw;
+    }
+    #reg-page-main-form >form >label{
+        font-size: 4vw;
+    }
+    #reg-page-main-form >form >input{
+        font-size: 3vw;
+    }
 }

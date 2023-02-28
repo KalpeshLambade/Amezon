@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="icon"
+      href="https://www.freepnglogos.com/uploads/amazon-png-logo-vector/amazon-icon-symbol-png-logo-21.png"
+    />
+    <link rel="stylesheet" href="/mobie.css" />
+    <script
+      src="https://kit.fontawesome.com/d98822fee5.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Register</title>
+  </head>
+  <body>
+    <div id="reg-page">
+      <div>
+        <div id="reg-page-logo">
+          <img
+            src="https://cdn.freebiesupply.com/images/large/2x/amazon-logo-transparent.png"
+            alt="amezon"
+          />
+        </div>
+        <div id="reg-page-main">
+          <div id="reg-page-main-top"><h2>Create account</h2></div>
+
+          <div id="reg-page-main-form">
+            <form onsubmit="register(event)">
+              <label>Enter User Name</label>
+              <input
+                type="text"
+                id="name"
+                placeholder="Enter User Name"
+                required
+              />
+              <label>Enter Mobile number</label>
+              <input
+                type="number"
+                id="number"
+                placeholder="+91 |   Mobile Number "
+                required
+              />
+              <label>Enter Email</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="Enter Mail Id"
+                required
+              />
+              <label>Enter User Password</label>
+              <input
+                type="password"
+                id="password"
+                placeholder="Enter password"
+                required
+              />
+              <p>Passwords must be at least 6 characters.</p>
+              <label>Conform User Password</label>
+              <input
+                type="password"
+                id="conform-password"
+                placeholder=" Conform password"
+                required
+              />
+              <input type="submit" value="Sign Up" />
+            </form>
+          </div>
+
+          <div id="reg-page-main-bot">
+            <div>
+              <p>
+                By creating an account, you agree to Amazon's
+                <span>Conditions of Use</span> and <span>Privacy Notice.</span>
+              </p>
+            </div>
+            <div>
+              <p>Already have an account? <span>Sign in</span></p>
+              <p>
+                Buying for work? <span>Create a free business account</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div>
+          <div>
+            <p>Conditions of Use</p>
+            <p>Privacy Notice</p>
+            <p>Help</p>
+          </div>
+          <div>
+            <p>© 1996-2023, Amazon.com, Inc. or its affiliates</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="/server.js"></script>
+  </body>
+</html>

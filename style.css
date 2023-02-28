@@ -587,3 +587,113 @@
     background-color:#232f3e;
     color:white;
 }
+
+/* Register Page */
+#reg-page{
+    height:100vh;
+    width:100%;
+}
+#reg-page >div{
+    /* border:1px solid blue; */
+    width:30%;
+    height:90%;
+    margin:auto;
+}
+#reg-page-logo{
+    height:8%;
+    width:30%;
+    margin: 2% auto;
+    /* border:1px solid blue; */
+}
+#reg-page-logo>img{
+    height:100%;
+    width:100%;
+}
+#reg-page-main{
+    height:92%;
+    border:1px solid grey;  
+    padding:0 5%; 
+}
+#reg-page-main-top{
+    /* border:1px solid blue; */
+    height:5%;
+}
+#reg-page-main-top>h2{
+    font-size:1.8vw;
+    font-weight: 500;
+}
+#reg-page-main-form{
+    /* border:1px solid red;  */
+    height:70%;
+}
+#reg-page-main-bot{
+    /* border:1px solid tomato; */
+    height:20%;
+}
+#reg-page-main-bot >div{
+    height:50%;
+}
+#reg-page-main-bot >div:nth-child(1)>p{
+    font-size: 1.2vw;
+}
+#reg-page-main-bot >div:nth-child(2)>p{
+    font-size: 1.2vw;
+    margin:1% 0;
+}
+#reg-page-main-bot >div:nth-child(1)>p>span,#reg-page-main-bot >div:nth-child(2)>p>span{
+    color:blue;
+}
+footer{
+    height:8%;
+    margin-top:1% ;
+    /* border:1px solid tomato; */
+}
+footer >div{
+    width:30%;
+    height:100%;
+    margin:auto;
+    border-top:1px solid grey; 
+}
+footer >div >div{
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+    height:50%;
+}
+footer >div >div:nth-child(1)>p{
+    color:blue;
+    
+}
+footer >div >div>p{
+    font-size: 1vw;
+}
+#reg-page-main-form{
+    height:75%;
+    /* border:1px solid cyan;  */
+}
+#reg-page-main-form >form{
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+}
+#reg-page-main-form >form >input{
+    height:8%;
+    font-size:1.2vw;
+    outline: none;
+    padding :0 2%;
+    border:1px solid grey;
+}
+#reg-page-main-form >form >input:last-child{
+    background-color: #f3d079;
+    border-radius:3px;
+}
+#reg-page-main-form >form >label{
+    height:5%;
+    font-size:1.3vw;
+}
+#reg-page-main-form >form >p{
+    font-size:1vw;
+    color:rgb(109, 16, 167);
+}
+
