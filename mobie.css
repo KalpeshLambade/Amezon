@@ -380,4 +380,31 @@
     #reg-page-main-form >form >input{
         font-size: 3vw;
     }
+
+    /* //Log in */
+
+    .log-page >div{
+        width:90%;
+    }
+    .log-page-main-top>h2{
+         font-size:5vw;
+    }
+    .log-pag-bot >div:nth-child(1)>p{
+         font-size: 3vw;
+    }
+    .log-pag-bot >div:nth-child(2)>p{
+        font-size: 3vw;
+    }
+   .log-in-form>form >label{
+        font-size: 4vw;
+    }
+   .log-in-form>form >input{
+        font-size: 3vw;
+    }
+    .move-to-signin{
+        width:70%;
+    }
+    .move-to-signin button, .move-to-signin legend{
+        font-size: 3vw;
+    }
 }

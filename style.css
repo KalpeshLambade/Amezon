@@ -593,7 +593,7 @@
     height:100vh;
     width:100%;
 }
-#reg-page >div{
+#reg-page >div, .log-page >div{
     /* border:1px solid blue; */
     width:30%;
     height:90%;
@@ -609,7 +609,7 @@
     height:100%;
     width:100%;
 }
-#reg-page-main{
+#reg-page-main, .log-page-main{
     height:92%;
     border:1px solid grey;  
     padding:0 5%; 
@@ -618,7 +618,7 @@
     /* border:1px solid blue; */
     height:5%;
 }
-#reg-page-main-top>h2{
+#reg-page-main-top>h2 {
     font-size:1.8vw;
     font-weight: 500;
 }
@@ -630,18 +630,20 @@
     /* border:1px solid tomato; */
     height:20%;
 }
-#reg-page-main-bot >div{
+#reg-page-main-bot >div,.log-pag-bot>div{
     height:50%;
 }
-#reg-page-main-bot >div:nth-child(1)>p{
-    font-size: 1.2vw;
+#reg-page-main-bot >div:nth-child(1)>p, .log-pag-bot>div:nth-child(1)>p{
+    font-size: 1vw;
 }
-#reg-page-main-bot >div:nth-child(2)>p{
-    font-size: 1.2vw;
+#reg-page-main-bot >div:nth-child(2)>p,.log-pag-bot>div:nth-child(2)>p{
+    font-size: 1vw;
     margin:1% 0;
 }
-#reg-page-main-bot >div:nth-child(1)>p>span,#reg-page-main-bot >div:nth-child(2)>p>span{
+#reg-page-main-bot >div:nth-child(1)>p>span,#reg-page-main-bot >div:nth-child(2)>p>span,
+.log-pag-bot >div:nth-child(1)>p>span,.log-pag-bot >div:nth-child(2)>p>span{
     color:blue;
+    cursor: pointer;
 }
 footer{
     height:8%;
@@ -671,24 +673,25 @@ footer >div >div>p{
     height:75%;
     /* border:1px solid cyan;  */
 }
-#reg-page-main-form >form{
+#reg-page-main-form >form,.log-in-form form{
     height:100%;
     display:flex;
     flex-direction: column;
     justify-content:space-evenly;
 }
-#reg-page-main-form >form >input{
+.form-input{
     height:8%;
     font-size:1.2vw;
     outline: none;
     padding :0 2%;
     border:1px solid grey;
 }
-#reg-page-main-form >form >input:last-child{
+.form-btn{
     background-color: #f3d079;
     border-radius:3px;
+    border:0.5px solid grey;
 }
-#reg-page-main-form >form >label{
+.form-label{
     height:5%;
     font-size:1.3vw;
 }
@@ -696,4 +699,54 @@ footer >div >div>p{
     font-size:1vw;
     color:rgb(109, 16, 167);
 }
-
+.log-in-form{
+    height:60%;
+    /* border:1px solid red; */
+}
+.log-page-main-top
+{
+    height:15%; 
+}
+.log-page-main-top>h2{
+    font-size:2vw;
+    font-weight: bold;
+    /* border:1px solid red; */
+}
+.log-page{
+    height:60vh;
+    width:100%;
+    /* border:1px solid red; */
+}
+.log-page>div{
+    width:25%;
+}
+.log-pag-bot{
+    /* border:1px solid tomato; */
+    height:25%;
+}
+.log-input{
+    height:15%;
+    font-size:1.2vw;
+}
+.log-label{
+    height:10%;
+    font-size:1.3vw;
+}
+.move-to-signin{
+    height: 8vh;
+    width:25%;
+    margin:auto;
+}
+.move-to-signin button {
+    height:50%;
+    width:100%;
+    font-size: 1vw;
+    cursor: pointer;
+}
+.move-to-signin legend{
+    text-align: center;
+    font-size: 1vw;
+}
+textfield{
+    width: 100%;
+}

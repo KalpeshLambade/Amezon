@@ -48,7 +48,34 @@ function register(event) {
       document.getElementById("email").value = "";
       document.getElementById("password").value = "";
       document.getElementById("conform-password").value = "";
-      window.location.href ="/homepage.html";
+      window.location.href ="/login.html";
       alert("registration done");
+    }
+  }
+
+  function login(event){
+    event.preventDefault();
+
+    var userInput =document.getElementById("name").value;
+    var userPassword =document.getElementById("password").value;
+    var dataFromLS =JSON.parse(localStorage.getItem("userData"));
+
+    var flag = false;
+    for(var i=0; i<dataFromLS.length; i++){
+      if((dataFromLS[i].email === userInput || dataFromLS[i].number == userInput) && dataFromLS[i].password === userPassword){
+        flag =true;
+      }
+    }
+
+    if(flag){
+      document.getElementById("name").value ="";
+      document.getElementById("password").value ="";
+      window.location.href ="/homepage.html";
+      alert("Loged in Sucessfully");
+    }
+    else{
+      alert("Please Check Enter data again");
+      document.getElementById("name").value ="";
+      document.getElementById("password").value ="";
     }
   }
