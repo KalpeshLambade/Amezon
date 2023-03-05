@@ -16,7 +16,7 @@
       crossorigin="anonymous"
     ></script>
 
-    <title>Log in</title>
+    <title>Reset Password</title>
   </head>
   <body>
     <div class="log-page">
@@ -28,29 +28,20 @@
           />
         </div>
         <div class="log-page-main">
-          <div class="log-page-main-top"><h2>Sign In</h2></div>
+          <div class="log-page-main-top"><h2>Reset Password</h2></div>
 
-          <div class="log-in-form">
-            <form onsubmit="login(event)">
-              <label class="log-label">Email or mobile phone number</label>
+          <div id="change" class="log-in-form">
+            <form onsubmit="verify(event)">
+              <label class="log-label">Email </label>
               <input
-                type="text"
-                id="name"
+                type="Email"
+                id="email"
                 class="form-input log-input"
                 placeholder="Enter User Name"
                 required
               />
 
-              <label class="log-label">Enter User Password</label>
-              <input
-                type="password"
-                id="password"
-                class="form-input log-input"
-                placeholder="Enter password"
-                required
-              />
-
-              <input type="submit" class="log-input form-btn" value="Sign Up" />
+              <input type="submit" class="log-input form-btn" value="Continue" />
             </form>
           </div>
 
@@ -62,7 +53,7 @@
               </p>
             </div>
             <div>
-              <p onclick="window.location.href='/resetPass.html'"><span>forgot Password</span></p>
+              <p><span>Need Help</span></p>
             </div>
           </div>
         </div>

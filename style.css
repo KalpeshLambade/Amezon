@@ -702,6 +702,9 @@ footer >div >div>p{
 .log-in-form{
     height:60%;
     /* border:1px solid red; */
+    display: flex;
+    flex-direction:column;
+
 }
 .log-page-main-top
 {
@@ -727,6 +730,7 @@ footer >div >div>p{
 .log-input{
     height:15%;
     font-size:1.2vw;
+    width:100%;
 }
 .log-label{
     height:10%;
@@ -749,4 +753,8 @@ footer >div >div>p{
 }
 textfield{
     width: 100%;
+}
+.height{
+    height:30%;
+    /* border:1px solid red; */
 }

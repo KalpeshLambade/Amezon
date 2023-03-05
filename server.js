@@ -79,3 +79,50 @@ function register(event) {
       document.getElementById("password").value ="";
     }
   }
+  var gettingEmail ="";
+  function verify(event){
+    event.preventDefault();
+
+    var dataFromLS =JSON.parse(localStorage.getItem("userData"));
+    var emailFromUser =document.getElementById("email").value;
+    gettingEmail =emailFromUser;
+
+    var flag= false;
+
+    for(i=0; i<dataFromLS.length; i++){
+      if(dataFromLS[i].email === emailFromUser){
+        flag =true;
+      }
+    }
+
+    if(flag){
+      var divFromHtml =document.getElementById("change");
+      var newCode=`<div class="log-in-form"><label class="log-label">New Password </label><br><input type="password" id="password" placeholder="Enter New Password" class="form-input log-input height" required><br><button onclick="resetPassword()" class="log-input form-btn height">Reset Password</button></div>`;
+
+      divFromHtml.innerHTML =newCode;
+
+      alert("Please Continue");
+    }
+    else{
+      document.getElementById("email").value ="";
+      alert("Please Enter Register Email Id");
+    }
+
+  }
+
+  function resetPassword(){
+    var dataFromLS =JSON.parse(localStorage.getItem("userData"));
+    var userPassword = document.getElementById("password").value;
+
+    for(var i=0;i<dataFromLS.length; i++){
+      if(dataFromLS[i].email === gettingEmail){
+        dataFromLS[i].password =userPassword;
+      }
+      
+    }
+    localStorage.setItem("userData",JSON.stringify(dataFromLS));
+    gettingEmail="";
+    alert("Password Reset");
+    window.location.href ="/login.html";
+
+  }
