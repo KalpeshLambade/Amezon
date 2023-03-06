@@ -23,6 +23,7 @@
     background-color: #131921;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 }
 /* navbar-top first div */
 #navbar-top >div:nth-child(1){
@@ -767,7 +768,27 @@ textfield{
     height:50%;
     border:1px solid blue;
     display: flex;
+    justify-content: space-evenly;
 }
-.display-top >div:nth-child(1)>div:nth-child(1){
-    width:25%;
+.display-top >div:nth-child(1)>div:nth-child(1),.display-top >div:nth-child(1)>div:nth-child(3){
+    width:10%;
+}
+.display-top >div:nth-child(1)>div:nth-child(1) img,.display-top >div:nth-child(1)>div:nth-child(3) img{
+    height:100%;
+    width:100%;
+}
+.display-top >div:nth-child(1)>div:nth-child(2){
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+    width:75%;
+}
+.display-top >div:nth-child(2){
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.display-top >div:nth-child(2) >div{
+    display: flex;
+    justify-content:space-between;
 }
