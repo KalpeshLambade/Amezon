@@ -126,3 +126,22 @@ function register(event) {
     window.location.href ="/login.html";
 
   }
+  function addProduct(event){
+    event.preventDefault();
+
+    var dataFromLS = JSON.parse(localStorage.getItem("product")) || [];
+    var productName =document.getElementById("name").value;
+    var produtImage =document.getElementById("image").value;
+    var productPrice =document.getElementById("price").value;
+
+    var addProduct ={name:productName, image:produtImage, price:productPrice};
+
+    dataFromLS.push(addProduct);
+
+    localStorage.setItem("product",JSON.stringify(dataFromLS));
+    document.getElementById("name").value="";
+    document.getElementById("image").value ="";
+    document.getElementById("price").value ="";
+    alert("Product Added");
+    window.location.href ="/displayproduct.html";
+  }

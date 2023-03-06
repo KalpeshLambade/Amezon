@@ -760,15 +760,19 @@ textfield{
     /* border:1px solid red; */
 }
 .display-top{
-    border:1px solid red;
+    border:1px solid grey;
     width:100%;
     height:1.5%;
 }
 .display-top>div{
     height:50%;
-    border:1px solid blue;
     display: flex;
     justify-content: space-evenly;
+}
+.display-top>div:nth-child(1){
+    border:1px solid grey;
+    border-left: none;
+    border-right:none;
 }
 .display-top >div:nth-child(1)>div:nth-child(1),.display-top >div:nth-child(1)>div:nth-child(3){
     width:10%;
@@ -782,13 +786,182 @@ textfield{
     justify-content:space-evenly;
     align-items:center;
     width:75%;
+    font-size: 1vw;
 }
 .display-top >div:nth-child(2){
     display: flex;
     justify-content:space-between;
     align-items: center;
+    margin: 0 2%; 
+    font-size: 1vw;
 }
 .display-top >div:nth-child(2) >div{
     display: flex;
-    justify-content:space-between;
+    justify-content:space-evenly;
+    width:14%;
+    border-radius:5px;
+    background-color: #ede1e186;
+    color:rgb(28, 8, 8);
+    font-size: 1vw;
 }
+.display-bot{
+    /* height: 100px; */
+    width:100%;
+    /* border:1px solid red; */
+    display:flex;
+}
+.display-bot-left{
+    height:165vh;
+    width:15%;
+    border:1px solid grey;
+    border-top:none ;
+}
+#display-bot-right{
+    width:85%;
+    height:500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* border:1px solid blue; */
+}
+#display-bot-right>div{
+    /* border:1px solid red; */
+    width:21%;
+    height:450px;
+    margin: 1% 0;
+}
+.select-cat{
+    display: flex;
+    margin:1% 5%;
+    /* border:1px solid blue; */
+}
+.select-cat>p{
+    margin-left: 2%;
+    font-size: 1.1vw;
+}
+.display-bot-left >div{
+    /* border:1px solid red; */
+    font-size: 1.2vw;
+    margin: 1% 0;
+}
+.display-bot-left >div>h4{
+    text-align:left;
+    margin: 2% 5%;
+}
+.display-names{
+    /* border:1px solid blue; */
+    margin:1% 10%;
+    text-align: left;
+}
+.display-names>div >p{
+    font-size: 1.1vw;
+    margin: 3%;
+}
+.size{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.size >button{
+    width:28%;
+    margin: 2% 0;
+    font-size: 0.9vw;
+}
+.display-bot-left >div:nth-child(5) >p{
+    text-align: left;
+    font-size: 1.1vw;
+    margin:1% 10%;
+}
+.display-bot-left >div:nth-child(5) >div{
+    display:flex;
+    justify-content: space-evenly;
+    margin: 2%;
+}
+.display-bot-left >div:nth-child(5) >div >input{
+    display:flex;
+    width:30%;
+    text-align: center;
+    font-size: 1.1vw;
+}
+.display-bot-left >div:nth-child(5) >div >button{
+    width:25%;
+    font-size: 1.1vw;
+}
+.colors{
+    display:flex;
+    flex-wrap: wrap;
+    height:20px;
+    justify-content: space-evenly;
+    margin: 2%;
+}
+.colors >div{
+    width:8%;
+    /* border:1px solid blue; */
+    cursor: pointer;
+}
+.colors >div:nth-child(1){
+    background-color: black;
+}
+.colors >div:nth-child(2){
+    background-color: #848484;
+}
+.colors >div:nth-child(3){
+    background-color: whitesmoke;
+}
+.colors >div:nth-child(4){
+    background-color: #744113;
+}
+.colors >div:nth-child(5){
+    background-color: #c5bf9c;
+}
+.colors >div:nth-child(6){
+    background-color: #be0000;
+}.colors >div:nth-child(7){
+    background-color: #ffd1d1;
+}
+.colors >div:nth-child(8){
+    background-color: #fba13e;
+}
+.colors >div:nth-child(9){
+    background-color: #feee2f;
+}
+.colors >div:nth-child(10){
+    background-color: #175195;
+}.colors >div:nth-child(11){
+    background-color: #29b4b1;
+}
+.prime{
+    height:20%;
+    /* border:1px solid red; */
+}
+.prime> p:nth-child(1){
+    height: 50%;
+}
+.prime> div:nth-child(2){
+    height: 25%;
+    width:50%;
+    margin: auto;
+}
+.prime> p:nth-child(3){
+    height:10%;
+    /* border:1px solid blue; */
+}
+.prime >div:nth-child(2)>img{
+     height: 100%;
+     width:100%;
+}
+#display-bot-right>div>div:nth-child(1){
+    height: 70%;
+    /* border:1px solid red; */
+}
+#display-bot-right>div>div:nth-child(1) >img{
+    height:100%;
+    width:100%;
+}
+#display-bot-right>div>p{
+    height: 5%;
+    /* border:1px solid red; */
+    font-size:1.2vw;
+}
+
+
