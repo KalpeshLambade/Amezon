@@ -825,7 +825,7 @@ textfield{
     /* border:1px solid blue; */
 }
 #display-bot-right>div{
-    /* border:1px solid red; */
+    border:1px solid red;
     width:21%;
     height:450px;
     margin: 1% 0;
@@ -939,7 +939,7 @@ textfield{
 }
 .prime> div:nth-child(2){
     height: 25%;
-    width:50%;
+    width:30%;
     margin: auto;
 }
 .prime> p:nth-child(3){
@@ -956,7 +956,7 @@ textfield{
 }
 #display-bot-right>div>div:nth-child(1) >img{
     height:100%;
-    width:100%;
+    width:50%;
 }
 #display-bot-right>div>p{
     height: 5%;

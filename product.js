@@ -5,7 +5,7 @@ window.onload=function(){
     var add =[];
     for(var i=0 ;i<dataFromLS.length ;i++){
         add += `<div><div><img src="${dataFromLS[i].image}" alt="product-image"></div><p>${dataFromLS[i].name}</p><p>${dataFromLS[i].price}</p><div class="prime">
-        <p>Save 5% with coupon (limited sizes/colours)</p>
+        <p><mark>Save 5% </mark>with coupon (limited sizes/colours)</p>
         <div>
           <img
             src="https://www.nicepng.com/png/detail/115-1159983_amazon-prime-logo-prime-amazon.png"
