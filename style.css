@@ -816,19 +816,6 @@ textfield{
     border:1px solid grey;
     border-top:none ;
 }
-#display-bot-right{
-    width:85%;
-    height:500px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    /* border:1px solid blue; */
-}
-#display-bot-right>div{
-    width:24%;
-    height:450px;
-    margin: 1% 0;
-}
 .select-cat{
     display: flex;
     margin:1% 5%;
@@ -930,27 +917,45 @@ textfield{
     background-color: #29b4b1;
 }
 .prime{
-    height:20%;
+    height:25%;
     /* border:1px solid red; */
 }
 .prime> p:nth-child(1){
-    height: 50%;
+    height: 30%;
 }
 .prime> div:nth-child(2){
-    height: 25%;
+    height: 20%;
     width:30%;
     margin: auto;
 }
 .prime> p:nth-child(3){
-    height:10%;
+    height:20%;
     /* border:1px solid blue; */
+}
+.prime >button{
+    height:25%;
+    width:50%;
+    border-radius: 5px;
+    border: 1px solid grey;
 }
 .prime >div:nth-child(2)>img{
      height: 100%;
      width:100%;
 }
+#display-bot-right{
+    width:85%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* border:1px solid blue; */
+}
+#display-bot-right>div{
+    width:24%;
+    height:500px;
+    border:1px solid rgb(224, 224, 231);
+}
 #display-bot-right>div>div:nth-child(1){
-    height: 70%;
+    height: 60%;
     /* border:1px solid red; */
 }
 #display-bot-right>div>div:nth-child(1) >img{
@@ -960,7 +965,22 @@ textfield{
 #display-bot-right>div>p{
     height: 5%;
     /* border:1px solid red; */
-    font-size:1.2vw;
+    /* font-size:1.2vw; */
+}
+#display-bot-right>div>p:nth-child(2){
+    font-size: 1.2vw;
+    height:10%;
+}
+#logout{
+    /* border:1px solid red; */
+    height:60%;
+}
+#logout >button{
+    width:60%;
+    height:90%;
+    border-radius: 20px;
+    margin-top: 1%;
+    cursor: pointer;
 }
 
 

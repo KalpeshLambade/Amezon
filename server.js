@@ -70,6 +70,11 @@ function register(event) {
     if(flag){
       document.getElementById("name").value ="";
       document.getElementById("password").value ="";
+
+      var user ={};
+      user["currentUserEmail"] =userInput;
+      localStorage.setItem("currentUser" ,JSON.stringify(user));
+       
       window.location.href ="/homepage.html";
       alert("Loged in Sucessfully");
     }

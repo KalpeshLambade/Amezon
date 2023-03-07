@@ -71,7 +71,9 @@
           <!-- /* navbar-top fifth div */ -->
 
           <div class="nav-head">
-            <p>Hello, sign In</p>
+            <div id="logout">
+              <p>Hello, sign In</p>
+            </div>
             <div>
               <p>Accounts & Lists</p>
               <i class="fa-solid fa-caret-down"></i>
@@ -95,43 +97,43 @@
         <!-- Navbar-bottom -->
         <div id="navbar-bot">
           <div>
-          <div class="align-nav">
-            <i class="fa-solid fa-bars"></i>
-            <p>All</p>
+            <div class="align-nav">
+              <i class="fa-solid fa-bars"></i>
+              <p>All</p>
+            </div>
+            <div>
+              <p>Amezon MiniTv</p>
+            </div>
+            <div>
+              <p>Best Sellers</p>
+            </div>
+            <div>
+              <p>Mobiles</p>
+            </div>
+            <div>
+              <p>Customer Services</p>
+            </div>
+            <div>
+              <p>Todays's Deal</p>
+            </div>
+            <div>
+              <p>Electronics</p>
+            </div>
+            <div>
+              <p>Amezon Pay</p>
+            </div>
+            <div class="align-nav">
+              <p>Prime</p>
+              <i class="fa-solid fa-caret-down"></i>
+            </div>
+            <div>
+              <p>Fashion</p>
+            </div>
+            <div>
+              <p>New Release</p>
+            </div>
           </div>
-          <div>
-            <p>Amezon MiniTv</p>
-          </div>
-          <div>
-            <p>Best Sellers</p>
-          </div>
-          <div>
-            <p>Mobiles</p>
-          </div>
-          <div>
-            <p>Customer Services</p>
-          </div>
-          <div>
-            <p>Todays's Deal</p>
-          </div>
-          <div>
-            <p>Electronics</p>
-          </div>
-          <div>
-            <p>Amezon Pay</p>
-          </div>
-          <div class="align-nav">
-            <p>Prime</p>
-            <i class="fa-solid fa-caret-down"></i>
-          </div>
-          <div>
-            <p>Fashion</p>
-          </div>
-          <div>
-            <p>New Release</p>
-          </div>
-        </div>
-<!-- /////////////////////////////// -->
+          <!-- /////////////////////////////// -->
           <div id="mob-nav-bot">
             <div>
               <div>
@@ -153,7 +155,7 @@
               <p>Select a location to see product availability</p>
             </div>
           </div>
-<!-- ////////////////////////////////// -->
+          <!-- ////////////////////////////////// -->
           <div>
             <img
               src="https://m.media-amazon.com/images/G/31/AmazonVideo/2021/X-site/SingleTitle/Farzi-Launch/400x39-SWM_NP._CB613859124_.jpg"
@@ -827,9 +829,7 @@
             </div>
           </div>
         </div>
-        <div id="sixer">
-
-        </div>
+        <div id="sixer"></div>
 
         <div class="body-fourth">
           <div>
@@ -1167,7 +1167,7 @@
           </div>
         </div>
 
-        <div class="single-cards ">
+        <div class="single-cards">
           <div>
             <h2>Up to 60% off | Curated furniture picks for your home</h2>
             <a>Visit the store</a>
@@ -1212,11 +1212,25 @@
           </div>
         </div>
       </div>
-      <div id="back-top">
-        Back to top
-      </div>
-      <div id="footer">
-      </div>
+      <div id="back-top">Back to top</div>
+      <div id="footer"></div>
     </div>
+    <script>
+      function check() {
+        var divFromHtml = document.getElementById("logout");
+        var dataFromLs = JSON.parse(localStorage.getItem("currentUser"));
+
+        if (dataFromLs) {
+          var newCode = `<button onclick='logout()'>Logout</button>`;
+          divFromHtml.innerHTML = newCode;
+        }
+      }
+      check();
+      function logout() {
+        localStorage.removeItem("currentUser");
+        window.location.reload();
+        alert("Logout Successfully done");
+      }
+    </script>
   </body>
 </html>

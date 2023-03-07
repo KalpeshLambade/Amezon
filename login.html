@@ -34,7 +34,7 @@
             <form onsubmit="login(event)">
               <label class="log-label">Email or mobile phone number</label>
               <input
-                type="text"
+                type="email"
                 id="name"
                 class="form-input log-input"
                 placeholder="Enter User Name"
@@ -92,5 +92,12 @@
     </footer>
 
     <script src="/server.js"></script>
+    <script>
+      var dataFromLs =JSON.parse(localStorage.getItem("currentUser"));
+      if(dataFromLs){
+        alert("Already Loged in");
+        window.location.href ='/homepage.html';
+      }
+    </script>
   </body>
 </html>
