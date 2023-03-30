@@ -1059,6 +1059,10 @@ textfield{
 .green{
     color:green;
 }
+.cursor{
+    cursor:pointer;
+}
+
 
 
 
