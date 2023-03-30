@@ -75,7 +75,7 @@ function register(event) {
       user["currentUserEmail"] =userInput;
       localStorage.setItem("currentUser" ,JSON.stringify(user));
        
-      window.location.href ="/homepage.html";
+      window.location.href ="/index.html";
       alert("Loged in Sucessfully");
     }
     else{
